@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <link href="/fonts/lithospro-regular.otf" rel="stylesheet"> 
-  
+
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 
@@ -80,14 +80,29 @@
 
 {{ content }}
 
-</main>
+<div id="login">
+  <form>
+          <input type="email" name="_replyto" placeholder="Email Address">
+          <input type="text" name="subject" placeholder="Subject">
+          <input type="text" name="_gotcha" style="display:none"><br>
+          <input type="submit" value="login" style="width: 100%">
+  </form>
+</div>
+
+<div id="register">
+  <form>
+          <input type="email" name="_replyto" placeholder="Email Address">
+          <input type="text" name="_gotcha" style="display:none"><br>
+          <input type="submit" value="next" style="width: 100%">
+  </form>
+</div>
 
 <footer>
         <p>
           Copyright © <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Vplay. All rights reserved.</p>
     
   </footer>
-
+</main>
 
   <script src="index.js"></script>
 
