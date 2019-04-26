@@ -5,7 +5,20 @@
   src: url('/fonts/lithospro-regular.otf');
 }
 
-p, li a, li {
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p, li a, li, h1, h2, textarea, [type=text],
+[type=email],
+textarea, label, a.button,
+[type=button],
+[type=submit],
+button {
   font-family: 'Roboto', sans-serif;
 
 }
@@ -40,7 +53,7 @@ li a:hover, li a:active, li a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'lithospro-regular', sans-serif;
+  /*font-family: 'lithospro-regular', sans-serif;*/
   text-align: center;
   font-weight: bold;
 }
@@ -140,12 +153,30 @@ section#contact {
   background: linear-gradient(to bottom left, rgba(129,74,216,.5), rgba(129,74,216,.5));
   padding-top: 90px;
   padding-bottom: 90px;
+  height: 666px;
 }
 
 center {
   width: 100%;
   margin: 0 auto;
   padding: 0 auto;
+}
+
+p.information {
+  width: 400px;
+  padding: 30px 0px 30px 0px;
+  color: whitesmoke;
+}
+
+p.socials a {
+  font-size: 25pt;
+  padding: 20px;
+  color: white;
+  transition: all .3s;
+}
+
+p.socials a:hover, p.socials a:active {
+  color: black;
 }
 
 /*Site-Hero Section*/
@@ -165,6 +196,12 @@ section#about p {
 }
 
 /* Contact Form */
+
+div.half {
+  width: 50%;
+  float: left;
+  padding: 0px 30px 0px 30px;
+}
 
 form {
   width: 100%;
@@ -189,7 +226,7 @@ button {
   -webkit-box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  font-family: 'lithospro-regular', sans-serif;
+  /*font-family: 'lithospro-regular', sans-serif;*/
 }
 
 div.login a.button,
@@ -215,7 +252,7 @@ div.login [type=submit]:hover,
 div.login button:hover {
   text-decoration: none;
   background-color: lightgray;
-  color: white;
+  color: black;
 }
 
 label {
@@ -227,7 +264,7 @@ label {
 [type=text],
 [type=email],
 textarea {
-  font-family: 'lithospro-regular', sans-serif;
+  /*font-family: 'lithospro-regular', sans-serif;*/
   width: 100%;
   display: block;
   border: 3px solid whitesmoke;
@@ -287,17 +324,48 @@ div.login textarea {
   transition: all 200ms ease;
   padding: 20px;
   background: #fff;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border: 3px solid lightgray;
-  border-radius: 30px;
+  border-radius: 30px 30px 30px 0px;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   margin: .5rem;
 }
 
-.card p,
 .card ul li {
   text-align: left; !important
+}
+
+.card p {
+  text-align: center;!important
+}
+
+.card i.fa-smile, .card i.fa-grin, .card i.fa-laugh-beam {
+  font-size: 50pt;
+}
+
+.card i.fa-smile {
+  color: orange;
+}
+
+.card i.fa-grin {
+  color: silver;
+}
+
+.card i.fa-laugh-beam {
+  color: gold;
+}
+
+.card h1 {
+  padding: 30px 0px 30px 0px;
+}
+
+.card h2, .card ul {
+  padding-bottom: 30px;
+}
+
+.card a i.fa-cart-arrow-down {
+  margin-bottom: 0;
 }
 
 .card:hover {
@@ -305,6 +373,10 @@ div.login textarea {
   transform: translateY(-1px);
   -webkit-box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card a i.fa-cart-arrow-down {
+  font-size: 240%;
 }
 
 .card img {
@@ -343,15 +415,17 @@ div#loginsection, div#registersection {
 }
 
 div#loginsection {
-  float: right;
+  float: left;
 }
 
 div#registersection {
-  float: left;
+  float: right;
 }
 
 a i.fa-times-circle {
-  float: left;
+  float: right;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 /*Footer*/
@@ -507,7 +581,7 @@ div.modal.show {
   form {
     margin: 0 auto;
     padding: 0 auto;
-    width:50%;
+    /*width:50%;*/
   }
 
   img.download {
