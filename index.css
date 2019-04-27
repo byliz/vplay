@@ -540,7 +540,7 @@ div.modal.show {
   }
 
   section#top {
-    background: url("/img/purplephone.png") no-repeat center, linear-gradient(to bottom right, rgba(129,74,216,.5),rgba(129,74,216,.5));
+    background: url("https://www.byliz.org/vplay-site/img/purplephone.png") no-repeat center, linear-gradient(to bottom right, rgba(129,74,216,.5),rgba(129,74,216,.5));
   }
 
   main {
