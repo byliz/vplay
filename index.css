@@ -1,5 +1,7 @@
 /*Fonts*/
 
+
+
 @font-face {
   font-family: 'lithospro-regular';
   src: url('/fonts/lithospro-regular.otf');
@@ -20,7 +22,10 @@ textarea, label, a.button,
 [type=submit],
 button {
   font-family: 'Roboto', sans-serif;
+}
 
+label {
+  font-weight: light;
 }
 
 p, li {
@@ -102,15 +107,19 @@ div#mobile-header {
   display: block;
   background-color: rgba(129,74,216,.5);
   width: 100%;
-  z-index: 3;
+  z-index: 2;
 }
 
-div#mobile-header i {
+div#mobile-header i#toggle-open, div#mobile-header i#toggle-close {
   color: white;
   float: right;
   padding: 20px;
   cursor: pointer;
   margin-top: -56px;
+}
+
+div#mobile-header i#toggle-close {
+  margin-top: -75px;
 }
 
 nav.nav-menu {
@@ -315,9 +324,8 @@ div.login button:hover {
 }
 
 label {
-  display: block;
-  font-weight: 700;
-  margin-bottom: .5rem;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 [type=text],
@@ -491,7 +499,7 @@ div.login textarea {
   div.modal {
    display: none; /* Hidden by default */
    position: fixed; /* Stay in place */
-   z-index: 2; /* Sit on top */
+   z-index: 3; /* Sit on top */
    left: 0;
    top: 0;
    width: 100%; /* Full width */
@@ -506,22 +514,19 @@ div.login textarea {
   border: 3px solid lightgray;
   border-radius: 30px 30px 30px 0px;
   padding: 20px;
-  margin: 15% auto;
+  margin: 20% auto;
   padding: 0 auto;
-  width: 50%;
-  height: 300px;
+  width: 100%;
+  min-height: 50%;
 }
 
 div#loginsection, div#registersection {
-  width: 45%;
-}
-
-div#loginsection {
-  float: left;
+  width: 100%;
+  float: none;
 }
 
 div#registersection {
-  float: right;
+  margin-top: 50px;
 }
 
 a i.fa-times {
@@ -851,5 +856,29 @@ section#about p {
 
 p.socials {
   padding-bottom: 30px;
+}
+
+div.login {
+  background-color: whitesmoke;
+  border: 3px solid lightgray;
+  border-radius: 30px 30px 30px 0px;
+  padding: 20px;
+  margin: 15% auto;
+  padding: 0 auto;
+  width: 50%;
+  height: 300px;
+}
+
+div#loginsection, div#registersection {
+  width: 45%;
+}
+
+div#loginsection {
+  float: left;
+}
+
+div#registersection {
+  float: right;
+  margin: 0px;
 }
 }

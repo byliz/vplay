@@ -23,6 +23,7 @@ function formValidation() {
 	var name = document.getElementById('name');
 	var email = document.getElementById('_replyto');
 	var message = document.getElementById('message');
+	var check = document.getElementById('check');
 
 	//Reset alert
 	$('#alert').text("");
@@ -43,6 +44,12 @@ function formValidation() {
 	if(message.value.length == 0) {
 		$('#alert').text("Please fill in all fields.");
 		message.focus();
+		return false;
+	}
+
+	if(check.value.boolean == false) {
+		$('#alert').text("Please agree to the privacy policy.");
+		check.focus();
 		return false;
 	}
 
