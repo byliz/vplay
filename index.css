@@ -195,7 +195,12 @@ section#top {
 section#about p {
   width: 80%;
   padding: 0px 50px 60px 50px;
-  text-aling: center;
+  text-align: center;
+}
+
+section#about .card p {
+  width: 100%;
+  padding: 0px;
 }
 
 /* Contact Form */
@@ -336,15 +341,11 @@ div.login textarea {
   margin: .5rem;
 }
 
-.card ul li {
-  text-align: left; !important
-}
-
 .card p {
   text-align: center;!important
 }
 
-.card i.fa-smile, .card i.fa-grin, .card i.fa-laugh-beam {
+.card i.fa-smile, .card i.fa-grin, .card i.fa-laugh-beam, .card i.fa-lightbulb, .card i.fa-child, .card i.fa-headphones-alt {
   font-size: 50pt;
 }
 
@@ -360,6 +361,30 @@ div.login textarea {
   color: gold;
 }
 
+.card.learn i {
+  color: #FBB03B;
+}
+
+.card.play i {
+  color: #9573FF;
+}
+
+.card.relax i {
+  color: gray;
+}
+
+.card.bronze i {
+  color: orange;
+}
+
+.card.silver i {
+  color: silver;
+}
+
+.card.gold i {
+  color: gold;
+}
+
 .card h1 {
   padding: 30px 0px 30px 0px;
 }
@@ -370,7 +395,16 @@ div.login textarea {
 
 .card a i.fa-cart-arrow-down {
   margin-bottom: 0;
+  color: #51d134;
 }
+/*
+.card li i.fa-check {
+  color: #51d134;
+}
+
+.card li i.fa-times {
+  color: #d13436;
+}*/
 
 .card:hover {
   -webkit-transform: translateY(-1px);
@@ -386,6 +420,24 @@ div.login textarea {
 .card img {
   display: block;
   margin: 0 auto;
+}
+
+.card {
+  opacity: .8;
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+.card ul li {
+  text-align: left; !important;
+  
+}
+
+.card ul li:nth-of-type(even) {
+margin-top: 10px;
+margin-bottom: 10px;
 }
 
 /*Login Modal Box*/
@@ -540,7 +592,12 @@ div.modal.show {
   }
 
   section#top {
-    background: url("https://www.byliz.org/vplay-site/img/purplephone.png") no-repeat center, linear-gradient(to bottom right, rgba(129,74,216,.5),rgba(129,74,216,.5));
+    background: url("/img/purplephone.png") no-repeat center, linear-gradient(to bottom right, rgba(129,74,216,.5),rgba(129,74,216,.5));
+  }
+
+  iframe.video {
+    margin-top: 77px;
+    margin-right: -620px;
   }
 
   main {
@@ -612,6 +669,25 @@ div.modal.show {
 
     margin-left: 365px;
   }
+
+  a:not([href]):not([tabindex]) {
+    color: white;
+    cursor: pointer;
+  }
+
+  a:not([href]):not([tabindex]):hover {
+    color: #9573FF;
+  }
+
+  div.modal a:not([href]):not([tabindex]) {
+    color: lightgray;
+    cursor: pointer;
+  }
+
+  div.modal a:not([href]):not([tabindex]):hover {
+    color: black;
+  }
+
 
   /*Desktop*/
 @media (min-width: 1200px) {
