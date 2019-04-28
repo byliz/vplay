@@ -102,7 +102,7 @@ div#mobile-header {
   display: block;
   background-color: rgba(129,74,216,.5);
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 div#mobile-header i {
@@ -115,6 +115,36 @@ div#mobile-header i {
 
 nav.nav-menu {
   display: none;
+  padding: 20px 0px 20px 20px;
+}
+
+nav.nav-menu li a {
+  text-transform: lowercase;
+  color: white;
+  font-size: 16pt;
+  transition: .5s;  
+  letter-spacing: -1px;
+  word-spacing: 3px;
+  border-radius: 30px 30px 0px 30px;
+  padding: 5px 10px 5px 10px;
+  margin-top: 20px;
+  background-color: rgba(129, 74, 216, 1);
+}
+
+nav.nav-menu li {
+  line-height: 40px;
+  list-style: none;
+}
+
+nav.nav-menu li a:hover, nav.nav-menu li a:active, nav.nav-menu li a:focus {
+  text-decoration: none;
+  color: #9573FF;
+  background-color: white;
+  border: 3px solid lightgray;
+  /*box-shadow: 0px 0px 10px 10px wheat;*/
+  
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -461,7 +491,7 @@ div.login textarea {
   div.modal {
    display: none; /* Hidden by default */
    position: fixed; /* Stay in place */
-   z-index: 1; /* Sit on top */
+   z-index: 2; /* Sit on top */
    left: 0;
    top: 0;
    width: 100%; /* Full width */
@@ -588,6 +618,7 @@ img.img-fluid.animatedBird:hover {
   padding: 0 auto;
   position: relative;
   display: block;
+  z-index: 1;
 }
 
 /*Owl Animation*/
@@ -653,6 +684,7 @@ p.info {
   display: block;
   margin: 0 auto;
   padding: 0 auto;
+  padding: 20px;
   border: 3px solid lightgray;
   border-radius: 30px 30px 30px 0px;
   background-color: white;
@@ -660,17 +692,6 @@ p.info {
   text-align: left;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.arrow-left {
-  width: 0; 
-  height: 0; 
-  border-top: 11px solid transparent;
-  border-bottom: 0px solid transparent; 
-  border-right: 50px solid lightgray; 
-  position: absolute;
-  margin-left: 650px;
-  margin-top: 90px;
 }
 
 form {
