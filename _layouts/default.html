@@ -58,6 +58,11 @@
 
       $("a i.fa-times").click(function(){
         $("div.modal").removeClass("show");
+        $("div.modal2").removeClass("show");
+      });
+
+      $("a#creds").click(function(){
+        $("div.modal2").addClass("show");
       });
     });
   </script>
@@ -93,6 +98,71 @@
 
 </div>
 
+<div class="modal2">
+  <div class="login2">
+    <a><i class="fas fa-times"></i></a>
+    <p><v>v</v><play>play</play> was made possible by the Spring 2019 ITI Capstone class at Rutgers University:</p>
+    <br>
+    <p>
+      Mara Alcantara - App Prototype and Education Research <br>
+      Asfa Arshi - Graphic Design and Concept Design <br>
+      Liz L. Berberena - Website and Concept Design <br>
+      Jessica Bui - Project Management <br>
+      Evan Casey - Pitch Lead <br>
+      Thomas Chin - Financials Research <br>
+      Edel Gonzalez - Pitch Lead <br>
+      Syed W. Jafri - Pitch and Tech Research <br>
+      Sagar Patel - Tech and Design Lead <br>
+      Krusha Vaidya - Financials Lead and Pitch <br>
+      Andrew Walker - Game Programming and Concept Design
+    </p>
+    <br>
+    <p>
+      With help from:<br><br>
+      Richard O. Anderson <br>
+      Veronica Armour <br>
+      Deborah Close <br>
+      Michael Doyle <br>
+      Erica Lucci <br>
+      Haj Shirley <br>
+      Sharon Stoerger <br>
+      ... and many others!
+    </p>
+    <br>
+    <h1><v style="font-size: 200%">Thank</v> <play style="font-size: 200%">you!</play></h1>
+    <pre>                             -yy+                           
+                             +MMd                           
+                             +MMd                           
+     `...     `../+.`/oss+-  +MMd :+osss+-:+++    `+++-     
+      -::-   `:::dMmMMNNMMMd-+MMd mNmmdNMMdMMM+   hMMm`     
+       -::. `:::`dMMd.  `sMMNsMMd  `----MMMsMMN` +MMN-      
+        -::.:::` dMMo     NMMmMMd/mMMmdNMMM`dMMs-MMM:       
+         -::::`  dMMo    +MMMyMMNMMM`  `MMM`.NMMNMMo        
+          -::`   dMMMmddNMMN/+MMmmMMhosmMMM` /MMMMy         
+          `-`    dMMdyhhhy+` -ss+`+yhhy+.ss  .MMMd          
+                 dMMo    `:+:-`/:           `dMMm`          
+         .:-``   dMMo   -///+++/+:         `+syN-           
+          /++++++++o+-:///++++++++-://++++++++o:            
+          :+++++++++++++++++++++++++++++++++++`             
+          :+++++++++++++++++++++++++++++++++++`             
+          /+++++++++++++++++++++++++++++++++++.             
+         :++++++osyyyso+++++++++++osyyyso+++++/.            
+        :++++ohho/:--:+yhy+++++yhy+:--:/ohho++++-           
+       :++++dy-``````````/ds+sd/``````````-yd++++:          
+      /yo++m+`````````````.ddd.`````````````+m++++-         
+      -ohddd````````....```:M:````....```````hysdd/         
+      -+++hy``````-:sys/-.`.M.``-:oys/-.`````ymy++-         
+      `+++oN-````-:mM<3N:-`oMo`.:dM<3N/-````.No+++`         
+       -+++sd:```.:sNMNy:.omomo.:sNMNh:.```-ds+++-          
+        -+++ody/.`.--:-:ody:::sdo:-:--.`./ydo+++-           
+         ./++++yhhyyyyhhs+:::::+ohhyyyyhhy++++/.            
+           ./+++++++++++++/:::/+++++++++++++/-              
+             .:/+++++++++++/:/+++++++++++/:.                
+                `-:/++++++++/++++++++/:-`                   
+                     `..---:::---..`                        </pre>
+  </div>
+</div>
+
   <div id="mobile-header">
     <a href="/../#top" class="headerlink"><p style="text-align: center;"><img src="/img/vplaywhite.png" class="img-fluid logo" style="width:100px;"></p></a>
 
@@ -126,12 +196,11 @@
     <footer>
       <p class="credit">
         Copyright © <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> <img src="/img/vplayowlwhite.png" class="img-fluid tinylogo" alt="vplay"> All rights reserved.</p>
-        <p class="priv"><a href="#">Privacy Policy</a></p>
-
+        <p class="priv"><a id="creds">Credits</a></p> <p class="priv"><a>Privacy Policy</a></p>
       </footer>
     </main>
 
-    <script src="index.js"></script>
+    <script src="/index.js"></script>
 
   </body>
 

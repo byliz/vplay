@@ -446,6 +446,11 @@ div.login textarea {
   padding-bottom: 30px;
 }
 
+.card h2 {
+  font-size: 150%;
+  font-style: italic;
+}
+
 .card a i.fa-cart-arrow-down {
   margin-bottom: 0;
   color: #51d134;
@@ -486,7 +491,6 @@ div.login textarea {
 
   .card ul li {
     text-align: left; !important;
-
   }
 
   .card ul li:nth-of-type(even) {
@@ -494,9 +498,9 @@ div.login textarea {
     margin-bottom: 10px;
   }
 
-  /*Login Modal Box*/
+  /*Modal Box*/
 
-  div.modal {
+  div.modal, div.modal2 {
    display: none; /* Hidden by default */
    position: fixed; /* Stay in place */
    z-index: 3; /* Sit on top */
@@ -509,7 +513,7 @@ div.login textarea {
    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
  }
 
- div.login {
+ div.login, div.login2 {
   background-color: whitesmoke;
   border: 3px solid lightgray;
   border-radius: 30px 30px 30px 0px;
@@ -518,6 +522,7 @@ div.login textarea {
   padding: 0 auto;
   width: 100%;
   min-height: 50%;
+  overflow: auto; /* Enable scroll if needed */
 }
 
 div#loginsection, div#registersection {
@@ -570,7 +575,7 @@ footer p.priv a {
   padding-right: 30px;
 }
 
-div.modal.show, nav.nav-menu.show {
+div.modal.show, div.modal2.show, nav.nav-menu.show {
   display: block;
 }
 
@@ -731,18 +736,26 @@ a:not([href]):not([tabindex]):hover {
   color: #9573FF;
 }
 
-div.modal a:not([href]):not([tabindex]) {
+div.modal a:not([href]):not([tabindex]), div.modal2 a:not([href]):not([tabindex]) {
   color: lightgray;
   cursor: pointer;
 }
 
-div.modal a:not([href]):not([tabindex]):hover {
+div.modal a:not([href]):not([tabindex]):hover, div.modal2 a:not([href]):not([tabindex]):hover {
   color: black;
 }
 
 .open {
   display: block;
 }
+
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+  text-align: center;
+} 
 
 /*Desktop*/
 @media (min-width: 1200px) {
@@ -858,7 +871,7 @@ p.socials {
   padding-bottom: 30px;
 }
 
-div.login {
+div.login, div.login2 {
   background-color: whitesmoke;
   border: 3px solid lightgray;
   border-radius: 30px 30px 30px 0px;
