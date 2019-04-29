@@ -629,6 +629,7 @@ img.img-fluid.animatedBird:hover {
   position: relative;
   display: block;
   z-index: 1;
+  margin-top: 35px;
 }
 
 /*Owl Animation*/
