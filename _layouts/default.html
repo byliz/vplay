@@ -52,6 +52,8 @@
 
       $("a#log").click(function(){
         $("div.modal").addClass("show");
+        $("nav.nav-menu").removeClass("show");
+        $("i.nav-toggle").removeClass("hide");
       });
 
       $("a i.fa-times").click(function(){
@@ -80,8 +82,9 @@
     </div>
     <div id="registersection">
       <form>
-        <input type="email" name="_replyto" placeholder="Email">
-        <input type="text" name="subject" placeholder="Password">
+        <input type="email" name="_replyto" id="_replyto" placeholder="Email">
+        <input type="text" name="subject" id="subject" placeholder="Password">
+        <input type="checkbox" name="check" id="check" value="true"><label for="tandc"> I agree to the <a href="#" target="_blank">privacy policy</a>.</label> 
         <input type="text" name="_gotcha" style="display:none"><br>
         <input type="submit" value="Register" style="width: 100%">
       </form>
