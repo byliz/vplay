@@ -1,2 +1,2 @@
-# vplay
-Possible website for ITI Capstone project
+# vplay-site
+Website for ITI Capstone project
