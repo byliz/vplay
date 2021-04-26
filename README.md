@@ -3,13 +3,23 @@ I made this website for my 11-person ITI Capstone class start-up project. This w
 
 ## Credits
 Mara Alcantara - App Prototype, Hardware, Merch, and Education Research
+
 Asfa Arshi - Graphic Design, Film, Hardware, and Concept Design
+
 Liz L. Berberena - Website and Concept Design
+
 Jessica Bui - Project Management
+
 Evan Casey - Pitch Lead and Research
+
 Thomas Chin - Financials Research
+
 Edel Gonzalez - Pitch Lead and Research
+
 Syed W. Jafri - Pitch and Tech Research
+
 Sagar Patel - Tech and Design Lead
+
 Krusha Vaidya - Financials Lead and Pitch
-Andrew Walker - Game Programming and Concept Design 
+
+Andrew Walker - Game Programming and Concept Design
