@@ -6,7 +6,7 @@ Mara Alcantara - App Prototype, Hardware, Merch, and Education Research
 
 Asfa Arshi - Graphic Design, Film, Hardware, and Concept Design
 
-Liz L. Berberena - Website and Concept Design
+Liz Berberena - Website and Concept Design
 
 Jessica Bui - Project Management
 
@@ -16,7 +16,7 @@ Thomas Chin - Financials Research
 
 Edel Gonzalez - Pitch Lead and Research
 
-Syed W. Jafri - Pitch and Tech Research
+Syed Jafri - Pitch and Tech Research
 
 Sagar Patel - Tech and Design Lead
 
